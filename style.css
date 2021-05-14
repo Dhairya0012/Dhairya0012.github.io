@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: transparent; */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99.8vh;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #f9ffa3;
+  background-image: url("https://www.transparenttextures.com/patterns/woven.png");
+}
+
+#layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+  background-color: #ffff2e;
+  opacity: 0.7;
+  z-index: 3;
+  position: relative;
+  animation: slideIn 0.8s ease-out;
+}
+
+#logo {
+  height: 51%;
+  width: 20%;
+  background-color: #000;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  box-shadow: 0.5px 5px 9px #555c31;
+  animation: slideIn 1s ease-out 1s, hid 1s none 0s;
+  background-color: #000;
+}
+
+#logo > img {
+  object-fit: scale-down;
+}
+
+#nav ul li {
+  display: inline-block;
+  padding: 22px;
+  transition: ease-in-out;
+  transition-duration: 0.7s;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  font-family: "Pangolin", cursive;
+  color: #131217;
+  font-weight: 750;
+  font-size: 1.5rem;
+}
+
+#nav {
+  height: 100px;
+  width: 40%;
+  z-index: 3;
+  position: absolute;
+  right: 83px;
+  top: 12px;
+  animation: hid 1s none 0s, try 0.9s none 0.5s, navAni 1s none 0.5s;
+}
+
+#nav ul li:hover {
+  transform: scale(1.5);
+  transition: ease-in-out;
+  transition-duration: 1.5s;
+}
+
+#image {
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: 7;
+}
+#img-mobile {
+  display: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 5;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: ;
+  }
+}
+
+@keyframes try {
+  0% {
+    transform: translateX(-20%);
+    transform: skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-20%);
+    transform: skewX(30deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0%);
+    transform: skewX(-15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes hid {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  99.99999999999999% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes navAni {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 83px;
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#app {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 4.4rem;
+  width: 75%;
+  height: 30%;
+  margin-top: 39px;
+  margin-right: 147px;
+  display: block;
+}
+
+#head {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+#descr {
+  font-family: "Antonio";
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 90%;
+  animation: hiden -1s none 2s, bounceInDown 1s ease-out 1s;
+}
+
+#profile {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+  animation: hiden 1s none 0s, fadeIn 0.5s ease-out 1s;
+}
+
+.profile-icons a{
+  color: black;
+  font-size: 1.6rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.profile-icons a:hover {
+  opacity: 1;
+}
+#img-mobile {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+
+@keyframes hiden {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    bottom: -50px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 40px;
+  }
+}
+
+#x {
+  width: 50%;
+  height: 40%;
+}
+
+#contact-image {
+  height: 40%;
+  width: 50%;
+}
+
+#contact-head {
+  font-size: 3.5rem;
+  font-family: Poppins;
+  z-index: 3;
+}
+
+input {
+  display: block;
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: rgb(233, 210, 6);
+}
+
+#name {
+  height: 20%;
+}
+
+#email {
+  height: 20%;
+}
+#msg {
+  height: 40%;
+}
+
+#contact-form {
+  width: 50%;
+}
+#mobile-nav {
+  display: none;
+}
+p {
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@keyframes scale-up {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes scale-down {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    display: none;
+  }
+}
+#contact-form {
+  width: 80%;
+  margin-top: 50px;
+}
+#contact-form input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#send-btn {
+  width: 20%;
+  padding: 8px;
+  background-image: linear-gradient(415deg, #ffff8d, #ffd740);
+  border: 2px solid black;
+}
+@media only screen and (max-width: 768px) {
+  #root {
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 80vh; */
+  }
+  #layer {
+    width: 100%;
+  }
+  #image {
+    display: none;
+  }
+  #img-mobile {
+    display: unset;
+    position: fixed;
+    width: 20%;
+    bottom: 0px;
+    right: 50px;
+    z-index: 10;
+    object-fit: contain;
+  }
+  #app {
+    margin-top: 0px;
+    font-size: 4rem;
+  }
+  #profile {
+    margin-left: -50%;
+  }
+  .profile-icons {
+    margin-left: 15px;
+  }
+  #contact-image {
+    display: none;
+  }
+  #contact-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #send-btn {
+    width: 40%;
+    padding: 5px;
+    background-image: linear-gradient(415deg, #ffff8d, #ffd740);
+    border: 2px solid black;
+  }
+  /* #img-mobile {
+    display: block;
+    width: 20%;
+    margin-bottom: 100px;
+  }
+  #profile {
+    position: relative;
+    bottom: unset;
+    width: 25%;
+    margin-top: 100px;
+  }
+  #logo {
+    height: 80px;
+    width: 20%;
+    position: fixed;
+    top: 30px;
+    left: 0;
+  }
+  #app {
+    margin-top: 50px;
+    font-size: 1.3rem;
+  } */
+}
+@media only screen and (max-width: 440px) {
+  #nav {
+    display: none;
+  }
+  #app {
+    margin-top: 0px;
+    /* margin-left: 20%; */
+    margin-right: 0;
+    margin-bottom: 80px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: unset;
+  }
+  #descr {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 52%;
+  }
+  #profile {
+    margin-left: -60%;
+  }
+  #img-mobile {
+    right: 10px;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    z-index: 51;
+  }
+  #mobile-nav {
+    position: fixed;
+    height: 100vh;
+    width: 200vw;
+    background-color: #ffff8d;
+    z-index: 50;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 40%;
+    animation: scale-up 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #mobile-nav > ul {
+    width: 100%;
+    z-index: 50;
+  }
+  #mobile-nav > ul > li {
+    margin-bottom: 25px;
+  }
+  #mobile-nav > ul > li > a {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+  }
+}
