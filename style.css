@@ -330,6 +330,11 @@ p {
   width: 100%;
   margin-bottom: 30px;
 }
+.fa-twitter:before {
+  content: "\f099";
+  margin: -1.2vw;
+}
+
 #send-btn {
   width: 20%;
   padding: 8px;
