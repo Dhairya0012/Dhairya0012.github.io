@@ -53,6 +53,8 @@ body {
   object-fit: scale-down;
 }
 
+
+
 #nav ul li {
   display: inline-block;
   padding: 22px;
@@ -207,7 +209,7 @@ img {
 }
 
 #profile {
-  margin-top: 196px;
+  margin-top: 82px;
   display: flex;
   width: 25%;
   align-items: center;
@@ -290,7 +292,10 @@ input {
 
 #contact-form {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
+
 #mobile-nav {
   display: none;
 }
@@ -322,12 +327,13 @@ p {
 }
 #contact-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 80%;
   margin-top: 50px;
 }
 #contact-form input {
   width: 100%;
+  height: 50px;
   margin-bottom: 30px;
 }
 .fa-twitter:before {
@@ -368,12 +374,17 @@ p {
   }
   #profile {
     margin-left: -50%;
-    margin-top: 136px;
+    margin-top: 82px;
   }
   .profile-icons {
     margin-left: 15px;
 
   }
+
+ #contact-form input{
+  height: 35px;
+  }
+
   #contact-image {
     display: none;
   }
@@ -387,30 +398,9 @@ p {
     background-image: linear-gradient(415deg, #ffff8d, #ffd740);
     border: 2px solid black;
   }
-  /* #img-mobile {
-    display: block;
-    width: 20%;
-    margin-bottom: 100px;
-  }
-  #profile {
-    position: relative;
-    bottom: unset;
-    width: 25%;
-    margin-top: 100px;
-  }
-  #logo {
-    height: 80px;
-    width: 20%;
-    position: fixed;
-    top: 30px;
-    left: 0;
-  }
-  #app {
-    margin-top: 50px;
-    font-size: 1.3rem;
-  } */
+  
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 540px) {
   #nav {
     display: none;
   }
@@ -431,6 +421,7 @@ p {
   }
   #profile {
     margin-left: -60%;
+    margin-top: 60px;
   }
   #img-mobile {
     right: 10px;
@@ -469,5 +460,16 @@ p {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
+  }
+}
+
+
+#nav{
+  width: 50%;
+}
+
+@media only screen and (max-width: 1024px){
+  #nav{
+    width: 60%;
   }
 }
