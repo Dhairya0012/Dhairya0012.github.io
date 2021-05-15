@@ -348,6 +348,8 @@ p {
   border: 2px solid black;
 }
 @media only screen and (max-width: 768px) {
+
+
   #root {
     flex-direction: column;
     justify-content: center;
@@ -397,6 +399,10 @@ p {
     padding: 5px;
     background-image: linear-gradient(415deg, #ffff8d, #ffd740);
     border: 2px solid black;
+  }
+
+  #nav{
+    width: 40%;
   }
   
 }
@@ -471,5 +477,27 @@ p {
 @media only screen and (max-width: 1024px){
   #nav{
     width: 60%;
+  }
+}
+
+
+
+
+
+@media only screen and (min-height :1024px) , screen and (max-height:600px){
+
+  #contact-form input {
+    width: 60%;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+  .profile-icons i{
+    font-size: larger;
+    padding-left: 20px;
+  }
+
+  #profile{
+    width: unset;
   }
 }
