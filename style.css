@@ -484,7 +484,7 @@ p {
 
 
 
-@media only screen and (min-height :1024px) , screen and (max-height:600px){
+@media only screen and (min-height :1024px) {
 
   #contact-form input {
     width: 60%;
