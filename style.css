@@ -34,7 +34,6 @@ body {
   background-color: #ffff2e;
   opacity: 0.7;
   z-index: 3;
-  position: relative;
   animation: slideIn 0.8s ease-out;
 }
 
@@ -208,9 +207,8 @@ img {
 }
 
 #profile {
-  position: absolute;
+  margin-top: 196px;
   display: flex;
-  bottom: 40px;
   width: 25%;
   align-items: center;
   justify-content: space-between;
@@ -323,6 +321,8 @@ p {
   }
 }
 #contact-form {
+  display: flex;
+  flex-direction: row;
   width: 80%;
   margin-top: 50px;
 }
@@ -368,9 +368,11 @@ p {
   }
   #profile {
     margin-left: -50%;
+    margin-top: 136px;
   }
   .profile-icons {
     margin-left: 15px;
+
   }
   #contact-image {
     display: none;
