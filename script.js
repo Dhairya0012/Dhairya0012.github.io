@@ -17,7 +17,7 @@ typewriter
   .changeDeleteSpeed(5)
   .deleteChars(7)
   .typeString('I am Dhairya Taneja!')
-  .pauseFor(3000)
+  .pauseFor(1500)
   .deleteChars(20)
   .typeString('a B.E CSE Student..')
   .pauseFor(3000)
