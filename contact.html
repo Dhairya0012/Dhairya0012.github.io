@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,15 +45,16 @@
                     Let's Get In Touch
                 </div>
 
-                <div id="contact-form">
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
                     <p>Name</p>
-                    <input type="name" name="" id="name">
+                    <input type="name" name="name" id="name">
                     <p>E-mail</p>
-                    <input type="email" name="" id="email">
+                    <input type="email" name="email" id="email">
                     <p>Message</p>
-                    <input type="text" name="" id="msg">
+                    <input type="text" name="msg" id="msg">
                     <a href="mailto:dhairya0192.be20@chitkara.edu.in"><button id="send-btn">Send</button></a>
-                </div>
+                </form>
 
                 <div id="profile" style="bottom: 15px;">
                     <div class="profile-icons"><a href="https://github.com/Dhairya0012" target="_blank"><i class="fab fa-github"></i></a></div>

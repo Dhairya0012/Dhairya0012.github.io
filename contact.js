@@ -18,3 +18,24 @@ document.getElementsByClassName('hamburger')[0].addEventListener('click', (e) =>
         root.style.backgroundImage = null;
     }
   });
+
+  (function() {
+    // https://dashboard.emailjs.com/admin/integration
+    emailjs.init('user_mT6S1fDpjw8CoVHSLClH0');
+})();
+
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      this.contact_number.value = Math.random() * 100000 | 0;
+      // these IDs from the previous steps
+      emailjs.sendForm('service_uo7jezw', 'template_y6wogrx', '#contact-form')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+       alert("Mail Sent!")
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+  });
+}
