@@ -44,13 +44,13 @@ window.onload = function() {
             for(let i=1;i<=3;i++){
              document.querySelectorAll("input")[i].value="";
             }
-            alert("Mail Sent!")
+            alert("Thanks for contacting me !")
      
          }, function(error) {
             console.log('FAILED...', error);
          });
        }else{
-         alert("Plz fill out all the fields");
+         alert("Plz fill out all the fields !");
        }
       
     
