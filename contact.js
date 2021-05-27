@@ -27,15 +27,34 @@ document.getElementsByClassName('hamburger')[0].addEventListener('click', (e) =>
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      // generate a five digit number for the contact_number variable
       this.contact_number.value = Math.random() * 100000 | 0;
-      // these IDs from the previous steps
-      emailjs.sendForm('service_uo7jezw', 'template_y6wogrx', '#contact-form')
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-       alert("Mail Sent!")
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
+      let flag=true;
+      for(let i=1;i<=3;i++){
+        if(document.querySelectorAll("input")[i].value==""){
+          flag=false
+        }
+       }
+       if(flag){
+          emailjs.sendForm('service_uo7jezw', 'template_y6wogrx', '#contact-form')
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            for(let i=1;i<=3;i++){
+             document.querySelectorAll("input")[i].value="";
+            }
+            alert("Mail Sent!")
+     
+         }, function(error) {
+            console.log('FAILED...', error);
+         });
+       }else{
+         alert("Plz fill out all the fields");
+       }
+      
+    
+
   });
 }
+
+document.getElementById("send-btn").addEventListener(function(){
+  document.getElementById("send-btn").style.border="3px solid black"
+})
