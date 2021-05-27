@@ -93,7 +93,10 @@ body {
   bottom: 0;
   right: 5%;
   z-index: 7;
+
 }
+
+
 #img-mobile {
   display: none;
 }

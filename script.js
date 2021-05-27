@@ -12,15 +12,15 @@ var typewriter = new Typewriter(app, {
  
 typewriter
   .typeString('Hi!! 👋')
-  .changeDelay(75)
-  .pauseFor(3000)
+  .changeDelay(50)
+  .pauseFor(1500)
   .changeDeleteSpeed(5)
   .deleteChars(7)
   .typeString('I am Dhairya Taneja!')
-  .pauseFor(1500)
+  .pauseFor(875)
   .deleteChars(20)
   .typeString('a B.E CSE Student..')
-  .pauseFor(3000)
+  .pauseFor(1500)
   .deleteChars(19)
  
   .start();
