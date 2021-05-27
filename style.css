@@ -346,7 +346,17 @@ p {
   padding: 8px;
   background-image: linear-gradient(415deg, #ffff8d, #ffd740);
   border: 2px solid black;
+  margin-bottom: 1px;
 }
+
+#send-btn:hover {
+
+  background-image: linear-gradient(415deg,#ffd740, #ffff8d);
+  border: 2.5px solid black;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 768px) {
 
 

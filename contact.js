@@ -19,6 +19,8 @@ document.getElementsByClassName('hamburger')[0].addEventListener('click', (e) =>
     }
   });
 
+
+
   (function() {
     // https://dashboard.emailjs.com/admin/integration
     emailjs.init('user_mT6S1fDpjw8CoVHSLClH0');
@@ -26,6 +28,7 @@ document.getElementsByClassName('hamburger')[0].addEventListener('click', (e) =>
 
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
+    
       event.preventDefault();
       this.contact_number.value = Math.random() * 100000 | 0;
       let flag=true;
@@ -55,6 +58,3 @@ window.onload = function() {
   });
 }
 
-document.getElementById("send-btn").addEventListener(function(){
-  document.getElementById("send-btn").style.border="3px solid black"
-})
