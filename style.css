@@ -339,10 +339,7 @@ p {
   height: 50px;
   margin-bottom: 30px;
 }
-.fa-twitter:before {
-  content: "\f099";
-  margin: -1.2vw;
-}
+
 
 #send-btn {
   width: 20%;
