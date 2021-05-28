@@ -25,8 +25,6 @@ typewriter
  
   .start();
 
-var descr=document.querySelector("#descr");
-descr.innerHTML="I am pursuing B.E CSE from <b>Chitkara</b> University,Chandigarh.I am polishing my skills of Python,Java,Flutter and Mern Stack.If you need to collaborate in any of the projects plz feel free to contact me."
 
 // if(window.innerWidth > 440){
 //   document.getElementsByClassName('hamburger')[0].style.display = 'none';
