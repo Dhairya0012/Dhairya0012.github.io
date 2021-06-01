@@ -11,6 +11,7 @@ body {
   justify-content: center;
   height: 99.8vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #root {
