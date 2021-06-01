@@ -489,7 +489,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width:800px)  {
+@media only screen and (min-width: 766px) and (max-width:966px)  {
   #nav ul li a{
     font-size: 20px;
   }
