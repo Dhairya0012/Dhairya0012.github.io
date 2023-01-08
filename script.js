@@ -22,7 +22,6 @@ typewriter
   .typeString('a B.E CSE Student..')
   .pauseFor(1500)
   .deleteChars(19)
- 
   .start();
 
 
