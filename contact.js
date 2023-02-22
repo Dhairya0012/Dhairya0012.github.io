@@ -38,19 +38,19 @@ window.onload = function() {
         }
        }
        if(flag){
-          emailjs.sendForm('service_uo7jezw', 'template_y6wogrx', '#contact-form')
+          emailjs.sendForm('service_cuns6hj', 'template_y6wogrx', '#contact-form')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             for(let i=1;i<=3;i++){
              document.querySelectorAll("input")[i].value="";
             }
-            alert("Thanks for contacting me !")
+            alert("I have received your message. Will reach out to you very soon !")
      
          }, function(error) {
             console.log('FAILED...', error);
          });
        }else{
-         alert("Plz fill out all the fields !");
+         alert("Please fill out all the fields !");
        }
       
     
