@@ -19,7 +19,7 @@ typewriter
   .typeString('I am Dhairya Taneja!')
   .pauseFor(875)
   .deleteChars(20)
-  .typeString('a B.E CSE Student..')
+  .typeString('a skilled Software Engineer')
   .pauseFor(1500)
   .deleteChars(19)
   .start();
